@@ -1,6 +1,6 @@
 # Wine Quality Prediction using Machine Learning
 
-This project aims to predict the quality of red wine using various physicochemical features. The dataset was sourced from the UCI Machine Learning Repository and the problem is treated as a **regression task**.
+This project aims to predict the quality of red wine using various physicochemical features. The dataset was sourced from the Wine quality dataset from Kaggle and the problem is treated as a **regression task**.
 
 ## Project Structure
 
