@@ -1,83 +1,151 @@
-# Wine Quality Prediction using Machine Learning
 
-This project aims to predict the quality of red wine using various physicochemical features. The dataset was sourced from the Wine quality dataset from Kaggle and the problem is treated as a **regression task**.
-
-## Project Structure
-
-This notebook is divided into four key milestones, each reflecting a standard machine learning pipeline:
+# 🍷 Wine Quality Classification Project
 
 ---
 
-## Milestone 1: Data Preprocessing & Exploratory Data Analysis (EDA)
+## 📚 Project Overview
+This project aims to classify the quality of wine samples using machine learning models. We work through the complete ML pipeline: data preprocessing, modeling, evaluation, and reporting.
 
-**Objective:** Prepare the dataset and understand the relationships between features.
-
-- Handled missing values and removed duplicates
-- Scaled numerical features using `StandardScaler`
-- Conducted EDA using:
-  - Histograms (feature distributions)
-  - Boxplots (outlier detection)
-  - Correlation heatmaps (feature relationships)
-- Generated summary statistics and initial insights
+The dataset used is **WineQT.csv**, which contains physicochemical properties of wine and their corresponding quality scores.
 
 ---
 
-## Milestone 2: Model Selection & Training
+## 🏁 Milestones Breakdown
 
-**Objective:** Build and train machine learning models to predict wine quality.
+### ✅ Milestone 1: Data Preprocessing and Exploratory Data Analysis (EDA)
 
-- Selected two regression models:
-  - Linear Regression
-  - Random Forest Regressor
-- Split data into training and test sets (80/20)
-- Trained and saved model predictions
+- **Tasks:**
+  - Handled missing values, duplicates, and outliers.
+  - Encoded categorical features (if any) and scaled numerical features.
+  - Created visualizations:
+    - Histograms
+    - Boxplots
+    - Correlation heatmaps
+  - Summarized key insights and detected patterns or anomalies in the dataset.
 
----
-
-## Milestone 3: Model Evaluation
-
-**Objective:** Evaluate model performance using appropriate regression metrics.
-
-- Used the following metrics:
-  - Mean Squared Error (MSE)
-  - R-squared (R²)
-- Performed 5-fold cross-validation for Random Forest
-- Visualized performance using bar charts
-- Compared both models and selected the best performer
+- **Deliverables:**
+  - Jupyter Notebook documenting:
+    - Preprocessing steps
+    - Summary statistics
+    - EDA visualizations
+    - Key findings
 
 ---
 
-## Milestone 4: Interpretation & Final Report
+### ✅ Milestone 2: Modeling
 
-**Objective:** Interpret model results and extract actionable insights.
+- **Tasks:**
+  - Selected and trained the following models:
+    - Logistic Regression (with hyperparameter tuning)
+    - Decision Tree Classifier (with hyperparameter tuning)
+    - Random Forest Classifier (with hyperparameter tuning)
+    - Artificial Neural Network (ANN)
+  - Performed basic hyperparameter tuning (e.g., tree depth, number of estimators, ANN layers, etc.).
+  - Evaluated models based on accuracy, classification reports, and confusion matrices.
 
-- Analyzed feature importance (e.g., alcohol and volatile acidity are strong predictors)
-- Summarized key findings and model recommendations
-- Suggested future improvements: hyperparameter tuning, feature engineering
-
----
-
-## Technologies Used
-
-- Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
-- Jupyter Notebook
-- Machine Learning models (Linear Regression, Random Forest)
-
----
-
-## Results
-
-- **Best model:** Random Forest Regressor
-- **Top features:** Alcohol, Sulphates, Volatile Acidity
-- **Conclusion:** Model performs well and can guide wine quality assessment.
+- **Deliverables:**
+  - Jupyter Notebook containing:
+    - Model training code
+    - Tuning setups (GridSearchCV for traditional ML models)
+    - Model performance evaluations
+    - Visualizations of confusion matrices and ANN training curves
 
 ---
 
-## How to Run
+### ✅ Milestone 3: Model Evaluation and Interpretation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/wine-quality-prediction.git
+- **Tasks:**
+  - Compared model performances systematically.
+  - Visualized and interpreted:
+    - Accuracy scores
+    - Precision, Recall, F1-Score
+    - Confusion matrices
+    - ANN training and validation curves
+  - Identified:
+    - The best-performing model
+    - Potential causes of misclassifications
+    - Class imbalance issues
+
+- **Deliverables:**
+  - Evaluation tables summarizing metrics across models
+  - Visualizations to interpret model behavior
+  - Discussion of model strengths and weaknesses
+
+---
+
+### ✅ Milestone 4: Final Report and Conclusion
+
+- **Tasks:**
+  - Summarized:
+    - Preprocessing techniques
+    - Modeling choices
+    - Evaluation results
+  - Highlighted:
+    - Final model selected for deployment or further development
+    - Key insights about the dataset
+    - Possible improvements for future work (e.g., handling class imbalance, advanced hyperparameter tuning, deep learning architectures)
+
+- **Deliverables:**
+  - Final comprehensive project report (or Jupyter Notebook)
+  - Clear recommendations for future steps
+
+---
+
+## ⚙️ Project Structure
+
+```bash
+Wine-Quality-Classification/
+│
+├── README.md             # This file
+├── WineQT.csv            # Dataset
+├── milestone1_eda.ipynb   # Data Preprocessing & EDA
+├── milestone2_modeling.ipynb  # Model training and tuning
+├── milestone3_evaluation.ipynb # Model evaluation and comparison
+├── milestone4_final_report.ipynb # Final conclusions and recommendations
+└── requirements.txt      # List of required Python packages
+```
+
+---
+
+## 🛠️ Requirements
+
+- Python 3.8+
+- Jupyter Notebook / JupyterLab
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- scikit-learn
+- tensorflow (for ANN)
+
+---
+
+## 📈 Key Results
+
+| Model                | Accuracy (Approx.) |
+|----------------------|--------------------|
+| Logistic Regression  | 61% - 63%           |
+| Decision Tree        | 65%                 |
+| Random Forest        | 70%                 |
+| Artificial Neural Network (ANN) | 72% - 75%  |
+
+---
+
+## ✨ Future Improvements
+
+- Implement techniques to handle class imbalance (e.g., SMOTE, oversampling).
+- Explore more powerful models like Gradient Boosting (XGBoost, LightGBM).
+- Perform more extensive hyperparameter tuning with tools like Optuna or RandomizedSearchCV.
+- Enhance ANN by introducing batch normalization, early stopping, and learning rate schedulers.
+
+---
+
+# 🚀 Thank you!
+
+---
+
+---
+
 ## COLLABORATORS
 Maria Wangari Kanene.
 Vincent Kimutai Ronoh
