@@ -36,11 +36,32 @@ The dataset used is **WineQT.csv**, which contains physicochemical properties of
 
 - **Tasks:**
   - Selected and trained the following models:
-    - Logistic Regression (with hyperparameter tuning)
-    - Decision Tree Classifier (with hyperparameter tuning)
-    - Random Forest Classifier (with hyperparameter tuning)
-    - Artificial Neural Network (ANN)
-  - Performed basic hyperparameter tuning (e.g., tree depth, number of estimators, ANN layers, etc.).
+
+Random Forest
+
+SGD Classifier
+
+Support Vector Classifier (SVC)
+
+
+Each was evaluated using test data and 5-fold cross-validation.
+We tuned hyperparameters for SVC and Random Forest using GridSearchCV.
+
+
+
+---
+
+
+Random Forest performed the best overall in both F1-score and cross-validation accuracy.
+
+SVC gave strong performance but was slightly behind in recall.
+
+SGD had the lowest scores, indicating poor fit for this dataset.
+
+
+
+
+---
   - Evaluated models based on accuracy, classification reports, and confusion matrices.
 
 - **Deliverables:**
@@ -60,7 +81,7 @@ The dataset used is **WineQT.csv**, which contains physicochemical properties of
     - Accuracy scores
     - Precision, Recall, F1-Score
     - Confusion matrices
-    - ANN training and validation curves
+  
   - Identified:
     - The best-performing model
     - Potential causes of misclassifications
