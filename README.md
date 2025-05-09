@@ -137,18 +137,11 @@ Wine-Quality-Classification/
 - seaborn
 - matplotlib
 - scikit-learn
-- tensorflow (for ANN)
+
 
 ---
 
-## 📈 Key Results
 
-| Model                | Accuracy (Approx.) |
-|----------------------|--------------------|
-| Logistic Regression  | 61% - 63%           |
-| Decision Tree        | 65%                 |
-| Random Forest        | 70%                 |
-| Artificial Neural Network (ANN) | 72% - 75%  |
 
 ---
 
@@ -169,6 +162,6 @@ Wine-Quality-Classification/
 
 ## COLLABORATORS
 Maria Wangari Kanene.
-Vincent Kimutai Ronoh
-Joy Melvine Okinyi
-Nasrudin Abdulahhi
+Vincent Kimutai Ronoh.
+Joy Melvine Okinyi.
+Nasrudin Abdulahhi.
